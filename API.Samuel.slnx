@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="API.Samuel/API.Samuel.csproj" />
+  <Project Path="API.Samuel.DAPPER/API.Samuel.DAPPER.csproj" />
+  <Project Path="API.Samuel.ENTIDADES/API.Samuel.ENTIDADES.csproj" />
+  <Project Path="API.Samuel.LOGICA.NEGOCIO/API.Samuel.LOGICA.NEGOCIO.csproj" />
+</Solution>

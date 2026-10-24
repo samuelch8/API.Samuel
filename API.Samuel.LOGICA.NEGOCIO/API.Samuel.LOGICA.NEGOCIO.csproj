@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\API.Samuel.DAPPER\API.Samuel.DAPPER.csproj" />
+    <ProjectReference Include="..\API.Samuel.ENTIDADES\API.Samuel.ENTIDADES.csproj" />
+  </ItemGroup>
+
+</Project>

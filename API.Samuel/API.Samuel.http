@@ -1,0 +1,68 @@
+@Host = http://localhost:5120
+
+### Página de inicio (comprueba que la API está en línea)
+GET {{Host}}/
+Accept: application/json
+
+################################
+# 6. Iniciar sesión
+################################
+POST {{Host}}/api/InicioSesion
+Content-Type: application/json
+
+{
+  "correo": "valeria.mora@ejemplo.com",
+  "contrasena": "Enfoque2026*"
+}
+
+################################
+# 4. Consultar todos los clientes
+################################
+GET {{Host}}/api/Clientes
+Accept: application/json
+
+################################
+# 5. Consultar un cliente por Id
+################################
+GET {{Host}}/api/Clientes/1
+Accept: application/json
+
+################################
+# 1. Agregar un cliente
+################################
+POST {{Host}}/api/Clientes
+Content-Type: application/json
+
+{
+  "correo": "laura.brenes@ejemplo.com",
+  "contrasena": "Enfoque2026*",
+  "nombre": "Laura",
+  "apellido1": "Brenes",
+  "apellido2": "Zúñiga",
+  "telefono": "+506 8890-3321",
+  "provincia": "Guanacaste",
+  "idTipoSesion": 1
+}
+
+################################
+# 2. Actualizar un cliente (Id en la ruta)
+################################
+PUT {{Host}}/api/Clientes/2
+Content-Type: application/json
+
+{
+  "correo": "diego.solano@ejemplo.com",
+  "contrasena": "Enfoque2026*",
+  "nombre": "Diego",
+  "apellido1": "Solano",
+  "apellido2": "Araya",
+  "telefono": "+506 6034-9999",
+  "provincia": "San José",
+  "idTipoSesion": 6
+}
+
+################################
+# 3. Eliminar un cliente por Id
+################################
+DELETE {{Host}}/api/Clientes/6
+Accept: application/json
